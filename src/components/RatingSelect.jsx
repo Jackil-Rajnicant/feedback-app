@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { useContext } from 'react'
-import FeedbackContext from '../context/FeedbackContext'
+import React from 'react'
 
 export default function RatingSelect({ select , selected}) {
   

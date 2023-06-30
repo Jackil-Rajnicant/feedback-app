@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import FeedbackList from "./components/FeedbackList";
 import FeedbackStats from "./components/FeedbackStats";
 import Header from "./components/Header";
-import FeedbackData from "./data/FeedbackData";
 import FeedbackForm from "./components/FeedbackForm";
 import About from "./pages/About";
 import AboutIconLink from './components/AboutIconLink'
@@ -10,8 +9,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { FeedbackProvider } from "./context/FeedbackContext";
 
 function App() {
-
-    const [feedback, setFeeback] = useState(FeedbackData);
 
     return (
         <FeedbackProvider>

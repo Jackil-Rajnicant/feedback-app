@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import Card from './shared/Card';
 import PropTypes from 'prop-types'
 import { FaTimes, FaEdit } from 'react-icons/fa'
@@ -8,8 +7,6 @@ import FeedbackContext from '../context/FeedbackContext';
 
 export default function FeedbackItem({item}) {
 
-    const [rating, setRating] = useState(7);
-    const [text, setText] = useState('This is an example of the feedback item.')
     const { deleteFeedback, editFeedback } = useContext(FeedbackContext)
 
     return (
